@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(150deg, rgb(254, 248, 228) 25%, rgb(252, 238, 203) 25%, rgb(252, 238, 203) 75%, rgb(254, 248, 228) 33%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1 {
+    text-align: center;
+    color: #36395A;
+    margin-bottom: 2rem;
+}
+
+.container {
+    /* max-width: 28rem; */
+    border: 2px solid #36395A;
+    border-radius: 1rem;
+    padding: 3rem;
+    min-width: 300px;
+    min-height: 370px;
+}
+
+#result {
+    border: 2px solid #36395A;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1rem;
+    display: block;
+    height: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input {
+    margin-left: 6px;
+    padding: 1px 2px;
+}
+
+.container form {
+    line-height: 2rem;
+}
+
+
+
+.container form p {
+    margin-bottom: 1rem;
+}
+
+#weight-guide {
+    margin-top: 1rem;
+    line-height: 1.4rem;
+}
+
+#weight-guide h2 {
+    text-align: center;
+
+}
+
+#weight-guide p {
+    padding: 5px;
+    text-align: center;
+}
+
+.container form .btn {
+    margin: auto;
+    display: block;
+    padding: 10px 10px;
+}
+
+
+/* ---------------Button------------ */
+.btn {
+    align-items: center;
+    appearance: none;
+    background-color: #FEF8E4;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+
+    height: 40px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+
+}
+
+.btn:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+@media (max-width:786px) {
+    .container {
+        min-width: 100px;
+        max-height: 170px;
+        padding: 1.5rem;
+
+    }
+}
